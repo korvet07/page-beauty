@@ -1,0 +1,16 @@
+.back-cool {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+}
+
+.back-cool__link {
+  &:hover {
+    color: $color-default-green;
+  }
+}

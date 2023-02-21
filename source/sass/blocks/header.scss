@@ -1,0 +1,28 @@
+.header {
+  border-bottom: 1px solid $color-default-gray;
+}
+
+.header__nav {
+  background-color: #e5e5e5;
+}
+
+.header__list {
+  @include list-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header__link {
+  line-height: 16px;
+  color: $color-deep-grey;
+
+  &:hover {
+    color: $color-default-green;
+  }
+}

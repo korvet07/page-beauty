@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  max-width: 265px;
+  flex-wrap: wrap;
+}
+
+.social__icon {
+  stroke: $color-default-green;
+  fill: $color-default-green;
+}
+
+.social__link:hover .social__icon {
+  stroke: $color-deep-grey;
+  fill: $color-deep-grey;
+}
+
+.social + address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: 900px) {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.logo-link {
+  margin: 7px 0;
+
+  @media (max-width: 800px) {
+    width: 140px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,16 @@
+.futer__container {
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.futer__back-cool {
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
+}
