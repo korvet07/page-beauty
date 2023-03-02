@@ -9,9 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   iosVhFix();
-  if (giftsForm) {
-    submitForm();
-  }
+
 
   // Modules
   // ---------------------------------
@@ -20,12 +18,15 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    if (giftsForm) {
+      submitForm();
+    }
   });
 });
 
 function submitForm() {
   giftsForm.addEventListener('change', (event) => {
-    if (event.target && event.target.closest('.gifts-list__form')) {
+    if (event.target.closest('.gifts-list__form')) {
       giftsForm.requestSubmit();
     }
   });
